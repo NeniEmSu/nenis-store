@@ -29,14 +29,13 @@ We'll be using:
 
 ## Check List
 
-- [ ] Setup client folder
-  - [ ] index.html
-  - [ ] Add bootswatch CDN
-  - [ ] Create app.js
-  - [ ] git init
-- [ ] Create a server folder
-  - [ ] Generate Express App
-  - [ ] git init
+- [x] Setup client folder
+  - [x] index.html
+  - [x] Add bootswatch CDN
+  - [x] Create index.js
+  - [x] git init
+- [x] Create a server folder
+  - [x] Generate Express App
 - [ ] Convert Express App to JSON API
   - [ ] Remove view rendering/views folder
   - [ ] Remove routes folder
