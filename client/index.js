@@ -1,0 +1,1 @@
+document.querySelector('main').innerHTML = '<p>Product goes here from js.</p>'
