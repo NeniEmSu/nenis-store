@@ -24,6 +24,10 @@ function generateContent(product, size, button, parent) {
       <div class="card-body">
         <h5 class="card-title">${product.title}</h5>
         <p class="card-text">${product.description}</p>
+        <p class="card-text">$ ${product.price}</p>
+        <p class="card-text">
+          ${product.quantity} item(s) left in stock
+        </p>
         <time class="card-text" datatime="${product.updated_at}">
           <small class="text-muted">
             Last updated ${parseDate(product.updated_at)}
