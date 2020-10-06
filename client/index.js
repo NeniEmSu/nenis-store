@@ -1,1 +1,7 @@
-document.querySelector('main').innerHTML = '<p>Product goes here from js.</p>'
+const API_URL = 'http://localhost:3000'
+
+
+fetch(API_URL)
+  .then(res => res.json())
+  .then(result => console.log(result))
+  .catch(error => console.error(error))

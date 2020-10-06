@@ -36,15 +36,15 @@ We'll be using:
   - [x] git init
 - [x] Create a server folder
   - [x] Generate Express App
-- [ ] Convert Express App to JSON API
-  - [ ] Remove view rendering/views folder
-  - [ ] Remove routes folder
-  - [ ] Remove static serve and public folder
-  - [ ] Update error handler
-  - [ ] Add GET `/` endpoint
-- [ ] Client: Try to make a request
-  - [ ] See the CORS error and remember this moment
-  - [ ] Add CORS to the API
+- [x] Convert Express App to JSON API
+  - [x] Remove view rendering/views folder
+  - [x] Remove routes folder
+  - [x] Remove static serve and public folder
+  - [x] Update error handler
+  - [x] Add GET `/` endpoint
+- [x] Client: Try to make a request
+  - [x] See the CORS error and remember this moment
+  - [x] Add CORS to the API
 - [ ] Create database
 - [ ] Initialize knex project
   - [ ] Install knex and pg
