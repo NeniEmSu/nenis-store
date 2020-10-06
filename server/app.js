@@ -25,8 +25,8 @@ app.get('/', (req, res) => {
       "get-products": `${baseUrl}/api/v1/products`,
       "get-single-product": `${baseUrl}/api/v1/product`,
       "add-product": `/api/v1/product`,
-      "update-product": `/api/v1/product:id`,
-      "delete-product": `/api/v1/product:id`
+      "update-product": `/api/v1/product/:id`,
+      "delete-product": `/api/v1/product/:id`
     }
   })
 })
