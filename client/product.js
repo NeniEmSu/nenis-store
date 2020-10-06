@@ -1,4 +1,5 @@
-import { getIdFromQuery, API_URL } from "./shared.js";
+import { getIdFromQuery, API_URL, generateContent } from "./shared.js";
+const productSection = document.querySelector("main section");
 
 const productId = getIdFromQuery();
 
@@ -11,5 +12,6 @@ function getProduct(id) {
 }
 
 function displayProduct({ product }) {
-  console.log(product);
+  const btn = `<a href="edit.html?id=${product.id}" class="btn btn-success mt-2">Edit Product</a>`;
+  generateContent(product, 12, btn, productSection);
 }

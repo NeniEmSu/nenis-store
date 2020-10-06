@@ -1,4 +1,10 @@
 const API_URL = "http://localhost:3000/api/v1";
+const options = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
 
 function getIdFromQuery() {
   const path = window.location.search.match(/\?id=([0-9]+)/);
@@ -23,6 +29,7 @@ function generateContent(product, size, button, parent) {
             Last updated ${parseDate(product.updated_at)}
           </small>
         </time>
+        <br>
         ${button}
       </div>
     </article>

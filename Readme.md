@@ -67,11 +67,11 @@ We'll be using:
   - [x] Validate id
   - [x] Create query
   - [x] Create route
-- [ ] Show one record in /product.html?id=:id
-  - [ ] Parse query string to get id
-  - [ ] AJAX Request to GET /products/:id
-  - [ ] Append to DOM
-  - [ ] Display link to /edit.html?id=:id
+- [x] Show one record in /product.html?id=:id
+  - [x] Parse query string to get id
+  - [x] AJAX Request to GET /products/:id
+  - [x] Append to DOM
+  - [x] Display link to /edit.html?id=:id
 - [ ] Create a record with POST /api/v1/products
   - [ ] Create route
   - [ ] Validate product!
