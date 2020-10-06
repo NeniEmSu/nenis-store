@@ -64,7 +64,7 @@ We'll be using:
   - [x] Each product links to /product.html?id=:id
   - [x] Display a link to /create.html
 - [ ] Show one record with GET /api/v1/products/:id
-  - [ ] Validate id
+  - [x] Validate id
   - [ ] Create query
   - [ ] Create route
 - [ ] Show one record in /product.html?id=:id

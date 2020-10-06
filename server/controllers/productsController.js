@@ -16,10 +16,10 @@ exports.getSingeProduct = async (req, res, next) => {
   const id = req.params.id
   try {
     if (!isNaN(id)) {
-      const products = await queries.getAll()
+      const product = await queries.getOne(id)
       res.status(201).json({
         type: 'success',
-        products
+        product
       })
     } else {
       const error = new Error("Invalid id")
