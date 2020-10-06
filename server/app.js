@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+const productsRoutes = require('./routes/products')
 
 
 const app = express();
@@ -21,6 +22,8 @@ app.get('/', (req, res) => {
     message: 'hello form the server.'
   })
 })
+
+app.use('/api', productsRoutes)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
