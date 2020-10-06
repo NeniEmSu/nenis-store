@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
   })
 })
 
-app.use('/api', productsRoutes)
+app.use('/api/v1', productsRoutes)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
