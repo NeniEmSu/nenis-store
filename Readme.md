@@ -45,19 +45,19 @@ We'll be using:
 - [x] Client: Try to make a request
   - [x] See the CORS error and remember this moment
   - [x] Add CORS to the API
-- [ ] Create database
-- [ ] Initialize knex project
-  - [ ] Install knex and pg
-  - [ ] Create knexfile.js
-- [ ] Create product table migration
-- [ ] Seed product table with sample data
-- [ ] Add api folder and create/mount router
+- [x] Create database
+- [x] Initialize knex project
+  - [x] Install knex and pg
+  - [x] Create knexfile.js
+- [x] Create product table migration
+- [x] Seed product table with sample data
+- [x] Add api folder and create/mount router
 - [ ] Connect to the database
-  - [ ] Create database connection file
-  - [ ] Create a queries file
-- [ ] List all records with GET /api/v1/products
-  - [ ] Create query
-  - [ ] Create route
+  - [x] Create database connection file
+  - [x] Create a queries file
+- [x] List all records with GET /api/v1/products
+  - [x] Create query
+  - [x] Create route
 - [ ] List all records in /index.html
   - [ ] AJAX Request to GET /products
   - [ ] Append to DOM

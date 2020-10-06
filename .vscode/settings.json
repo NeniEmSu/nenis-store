@@ -3,6 +3,10 @@
     "Neni's",
     "bootswatch",
     "createdb",
-    "knexfile"
+    "knexfile",
+    "neni",
+    "nenis",
+    "postgres",
+    "postgresql"
   ]
 }
