@@ -1,10 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/products', (req, res, next) => {
-  res.json({
-    message: "response from the router folder"
-  })
-})
+const productsCtrl = require('../controllers/productsController');
+
+router.get('/products', productsCtrl.getProducts)
 
 module.exports = router
