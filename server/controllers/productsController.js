@@ -8,6 +8,6 @@ exports.getProducts = async (req, res, next) => {
       products
     })
   } catch (error) {
-    next(err)
+    next(error)
   }
 }
