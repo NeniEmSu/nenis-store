@@ -8,9 +8,6 @@ exports.getProducts = async (req, res, next) => {
       products
     })
   } catch (error) {
-    res.status(500).json({
-      type: 'error',
-      error,
-    })
+    next(err)
   }
 }
