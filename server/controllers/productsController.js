@@ -3,7 +3,7 @@ const queries = require("../db/queries");
 exports.getProducts = async (req, res, next) => {
   try {
     const products = await queries.getAll();
-    res.status(201).json({
+    res.status(200).json({
       type: "success",
       products,
     });
@@ -19,12 +19,11 @@ exports.getSingeProduct = async (req, res, next) => {
       const product = await queries.getOne(id);
       // handle no product
       !product
-        ?
-        next() :
-        res.status(201).json({
-          type: "success",
-          product,
-        });
+        ? next()
+        : res.status(200).json({
+            type: "success",
+            product,
+          });
     } else {
       const error = new Error("Invalid id");
       next(error);
