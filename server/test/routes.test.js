@@ -8,10 +8,18 @@ describe("Test the root path", () => {
   });
 });
 
-describe('Get Endpoints', () => {
-  it('Should get list of all products', async () => {
-    const res = await request(app).get('/api/products')
-    expect(res.status).toEqual(200)
-    expect(res.body).toHaveProperty('message')
-  })
-})
+describe("Get Endpoints", () => {
+  it("Should get list of all products", async () => {
+    const res = await request(app).get("/api/v1/products");
+    expect(res.status).toEqual(200);
+    expect(res.body).toHaveProperty("products");
+  });
+});
+
+describe("Get Endpoints", () => {
+  it("Should get single product", async () => {
+    const res = await request(app).get("/api/v1/products/1");
+    expect(res.status).toEqual(200);
+    expect(res.body).toHaveProperty("product");
+  });
+});
