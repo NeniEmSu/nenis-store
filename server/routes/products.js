@@ -9,4 +9,6 @@ router.get("/:id", productsCtrl.getSingeProduct);
 
 router.post("/", productsCtrl.addProduct);
 
+router.put("/:id", productsCtrl.updateProduct);
+
 module.exports = router;
