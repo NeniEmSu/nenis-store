@@ -1,1 +1,1 @@
-roo: /server
+root: /server
