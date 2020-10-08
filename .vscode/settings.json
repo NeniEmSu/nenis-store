@@ -2,12 +2,15 @@
   "cSpell.words": [
     "Neni's",
     "bootswatch",
+    "choco",
     "createdb",
     "datatime",
     "knexfile",
     "neni",
     "nenis",
     "postgres",
-    "postgresql"
+    "postgresql",
+    "psql",
+    "varcel"
   ]
 }
