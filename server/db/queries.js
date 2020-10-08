@@ -9,4 +9,7 @@ module.exports = {
     return connection("product").where("id", id).first();
   },
 
+  create(product) {
+    return connection("product").insert(product);
+  },
 };
