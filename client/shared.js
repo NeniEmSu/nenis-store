@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/v1";
+const API_URL = "http://localhost:3000/api/v1/products";
 const options = {
   weekday: "long",
   year: "numeric",

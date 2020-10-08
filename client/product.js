@@ -8,7 +8,7 @@ console.log(productId);
 getProduct(productId).then(displayProduct);
 
 function getProduct(id) {
-  return fetch(`${API_URL}/product/${id}`).then((res) => res.json());
+  return fetch(`${API_URL}/${id}`).then((res) => res.json());
 }
 
 function displayProduct({ product }) {

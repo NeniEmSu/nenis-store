@@ -4,7 +4,7 @@ const productsSection = document.querySelector("main section");
 getProducts().then(displayProducts);
 
 function getProducts() {
-  return fetch(`${API_URL}/products`).then((res) => res.json());
+  return fetch(`${API_URL}`).then((res) => res.json());
 }
 
 function displayProducts({ products }) {
