@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
     message: "Hello there welcome to my products api find the routes below.",
     routes: {
       "get-products": `${baseUrl}/api/v1/products`,
-      "get-single-product": `${baseUrl}/api/v1/products`,
+      "get-single-product": `${baseUrl}/api/v1/products/1`,
       "add-product": `/api/v1/products`,
       "update-product": `/api/v1/products/:id`,
       "delete-product": `/api/v1/products/:id`,
