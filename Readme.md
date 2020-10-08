@@ -101,17 +101,17 @@ We'll be using:
   - [x] Add a delete button to the /product.html page
     - [x] DELETE /products/:id
     - [x] Successful deletion should redirect to index.html
-- [ ] Deploy server to Heroku
+- [x] Deploy server to Heroku
   - [x] Sign up and login to heroku
   - [x] Install the heroku CLI
-  - [ ] Create a heroku app
-  - [ ] Push to heroku
-  - [ ] View heroku logs
-- [ ] Add Postgres DB to Heroku
-  - [ ] Add postgres addon
-  - [ ] Add production connection to knex
-  - [ ] Run migrations on production DB
-  - [ ] Run seeds on production DB
+  - [x] Create a heroku app
+  - [x] Push to heroku
+  - [x] View heroku logs
+- [x] Add Postgres DB to Heroku
+  - [x] Add postgres addon
+  - [x] Add production connection to knex
+  - [x] Run migrations on production DB
+  - [x] Run seeds on production DB
 - [ ] Deploy client to firebase
   - [ ] Sign up and login to firebase
   - [ ] Install the firebase CLI
