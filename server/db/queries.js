@@ -9,7 +9,8 @@ module.exports = {
     return connection("product").where("id", id).first();
   },
 
-  create(product) {
-    return connection("product").insert(product);
+  async create(product) {
+    const idArray = await connection("product").insert(product, "id");
+    return idArray[0];
   },
 };
