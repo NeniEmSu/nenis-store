@@ -1,5 +1,17 @@
 const queries = require("../db/queries");
 
+function getProductFromBody(body) {
+  const { title, description, image, price, quantity } = body;
+  const product = {
+    title,
+    description,
+    image,
+    price,
+    quantity,
+  };
+  return product;
+}
+
 exports.getProducts = async (req, res, next) => {
   try {
     const products = await queries.getAll();
@@ -30,14 +42,7 @@ exports.getSingeProduct = async (req, res, next) => {
 
 exports.addProduct = async (req, res, next) => {
   try {
-    const { title, description, image, price, quantity } = req.body;
-    const product = {
-      title,
-      description,
-      image,
-      price,
-      quantity,
-    };
+    const product = getProductFromBody(req.body);
     const createdProductId = await queries.create(product);
     res.status(201).json({
       type: "success",
@@ -50,8 +55,12 @@ exports.addProduct = async (req, res, next) => {
 
 exports.updateProduct = async (req, res, next) => {
   try {
-    res.status(201).json({
+    const id = req.params.id;
+    const product = getProductFromBody(req.body);
+    const updatedProduct = await queries.update(id, product);
+    res.status(202).json({
       type: "success",
+      product: updatedProduct,
     });
   } catch (error) {
     next(error);
