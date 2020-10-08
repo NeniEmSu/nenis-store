@@ -58,7 +58,10 @@ exports.updateProduct = async (req, res, next) => {
     const id = req.params.id;
     const product = getProductFromBody(req.body);
     await queries.update(id, product);
-    res.status(204);
+    res.status(204).json({
+      type: "success",
+      message: "updated",
+    });
   } catch (error) {
     next(error);
   }
@@ -68,7 +71,10 @@ exports.deleteProduct = async (req, res, next) => {
   try {
     const id = req.params.id;
     await queries.delete(id);
-    res.status(204);
+    res.status(204).json({
+      type: "success",
+      message: "deleted!",
+    });
   } catch (error) {
     next(error);
   }

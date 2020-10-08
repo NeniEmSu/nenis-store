@@ -18,7 +18,7 @@ module.exports = {
     return connection("product").where("id", id).update(product);
   },
 
-  update(id) {
+  delete(id) {
     return connection("product").where("id", id).delete();
   },
 };
