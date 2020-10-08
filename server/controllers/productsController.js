@@ -63,3 +63,13 @@ exports.updateProduct = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.deleteProduct = async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    await queries.delete(id);
+    res.status(204);
+  } catch (error) {
+    next(error);
+  }
+};
