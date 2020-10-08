@@ -93,11 +93,11 @@ We'll be using:
     - [x] Validate all inputs
     - [x] PUT /products/:id
     - [x] Successful update should redirect to /product.html?id=:id
-- [ ] Delete a record with DELETE /api/v1/products/:id
-  - [ ] Create route
-  - [ ] Validate id
-  - [ ] Create query
-- [ ] Delete a record
+- [x] Delete a record with DELETE /api/v1/products/:id
+  - [x] Create route
+  - [x] Validate id
+  - [x] Create query
+- [x] Delete a record
   - [ ] Add a delete button to the /product.html page
     - [ ] DELETE /products/:id
     - [ ] Successful deletion should redirect to index.html
