@@ -7,4 +7,6 @@ router.get("/", productsCtrl.getProducts);
 
 router.get("/:id", productsCtrl.getSingeProduct);
 
+router.post("/", productsCtrl.addProduct);
+
 module.exports = router;
