@@ -13,4 +13,8 @@ module.exports = {
     const idArray = await connection("product").insert(product, "id");
     return idArray[0];
   },
+
+  update(id) {
+    return connection("product").where("id", id).update(product);
+  },
 };
