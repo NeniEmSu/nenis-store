@@ -87,12 +87,12 @@ We'll be using:
   - [x] Validate id
   - [x] Validate updates
   - [x] Create query
-- [ ] Update one record in /product.html?id=:id
-  - [ ] Display a form with input boxes for all fields
-  - [ ] Display a button to submit the update of the resource
-    - [ ] Validate all inputs
-    - [ ] PUT /products/:id
-    - [ ] Successful update should redirect to /product.html?id=:id
+- [x] Update one record in /product.html?id=:id
+  - [x] Display a form with input boxes for all fields
+  - [x] Display a button to submit the update of the resource
+    - [x] Validate all inputs
+    - [x] PUT /products/:id
+    - [x] Successful update should redirect to /product.html?id=:id
 - [ ] Delete a record with DELETE /api/v1/products/:id
   - [ ] Create route
   - [ ] Validate id
@@ -102,7 +102,7 @@ We'll be using:
     - [ ] DELETE /products/:id
     - [ ] Successful deletion should redirect to index.html
 - [ ] Deploy server to Heroku
-  - [ ] Signup and login to heroku
+  - [ ] Sign up and login to heroku
   - [ ] Install the heroku CLI
   - [ ] Create a heroku app
   - [ ] Push to heroku
