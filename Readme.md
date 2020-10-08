@@ -76,12 +76,12 @@ We'll be using:
   - [x] Create route
   - [x] Validate product!
   - [x] Create query
-- [ ] Create a record in /new.html
-  - [ ] Display a form with input boxes for all fields
-  - [ ] Display a button to submit the creation of the resource
-    - [ ] Validate all inputs
-    - [ ] POST /products
-    - [ ] Successful creation should redirect to /product.html?id=:id
+- [x] Create a record in /new.html
+  - [x] Display a form with input boxes for all fields
+  - [x] Display a button to submit the creation of the resource
+    - [x] Validate all inputs
+    - [x] POST /products
+    - [x] Successful creation should redirect to /product.html?id=:id
 - [ ] Update a record with PUT /api/v1/products/:id
   - [ ] Create route
   - [ ] Validate id
