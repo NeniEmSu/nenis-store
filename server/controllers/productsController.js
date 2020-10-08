@@ -57,11 +57,8 @@ exports.updateProduct = async (req, res, next) => {
   try {
     const id = req.params.id;
     const product = getProductFromBody(req.body);
-    const updatedProduct = await queries.update(id, product);
-    res.status(202).json({
-      type: "success",
-      product: updatedProduct,
-    });
+    await queries.update(id, product);
+    res.status(204);
   } catch (error) {
     next(error);
   }
