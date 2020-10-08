@@ -34,19 +34,14 @@ exports.getProducts = async (req, res, next) => {
 exports.getSingeProduct = async (req, res, next) => {
   const id = req.params.id;
   try {
-    if (!isNaN(id)) {
-      const product = await queries.getOne(id);
-      // handle no product
-      !product
-        ? next()
-        : res.status(200).json({
-            type: "success",
-            product,
-          });
-    } else {
-      const error = new Error("Invalid id");
-      next(error);
-    }
+    const product = await queries.getOne(id);
+    // handle no product
+    !product
+      ? next()
+      : res.status(200).json({
+          type: "success",
+          product,
+        });
   } catch (error) {
     next(error);
   }
@@ -73,6 +68,16 @@ exports.addProduct = async (req, res, next) => {
       const error = new Error(validationCheck.error_message);
       next(error);
     }
+  } catch (error) {
+    next(error);
+  }
+};
+
+exports.updateProduct = async (req, res, next) => {
+  try {
+    res.status(201).json({
+      type: "success",
+    });
   } catch (error) {
     next(error);
   }
