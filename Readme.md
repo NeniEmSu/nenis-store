@@ -98,12 +98,12 @@ We'll be using:
   - [x] Validate id
   - [x] Create query
 - [x] Delete a record
-  - [ ] Add a delete button to the /product.html page
-    - [ ] DELETE /products/:id
-    - [ ] Successful deletion should redirect to index.html
+  - [x] Add a delete button to the /product.html page
+    - [x] DELETE /products/:id
+    - [x] Successful deletion should redirect to index.html
 - [ ] Deploy server to Heroku
-  - [ ] Sign up and login to heroku
-  - [ ] Install the heroku CLI
+  - [x] Sign up and login to heroku
+  - [x] Install the heroku CLI
   - [ ] Create a heroku app
   - [ ] Push to heroku
   - [ ] View heroku logs
